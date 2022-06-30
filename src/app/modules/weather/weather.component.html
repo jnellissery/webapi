@@ -1,0 +1,8 @@
+<ng-container *ngIf="cityConditions$">
+  <app-current-conditions [cityConditions$]="cityConditions$"></app-current-conditions>
+ </ng-container>
+ <ng-container *ngIf="forcastConditions$">
+  <app-forecast [forcastConditions$]="forcastConditions$"></app-forecast>
+ </ng-container>
+ 
+

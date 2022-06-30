@@ -1,0 +1,23 @@
+.example-card{
+  max-width: 400px;
+  margin: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .column {
+    display: flex;
+    border: 1px solid;
+    margin: 10px;
+    padding: 5px;
+    flex-basis: 0;
+    height: 100px;
+    min-width: 130px;
+    justify-content: center;
+    align-items: center;}
+    .mat-card .mat-divider-horizontal {display: none;}
+    .mat-card-subtitle{
+      margin-right: 5px;
+    }

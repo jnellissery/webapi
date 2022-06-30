@@ -1,0 +1,28 @@
+
+<!-- <div *ngFor="let forecast in forcastConditions$|async">
+
+    <span>forecast.day</span>
+</div>  -->
+
+<ng-container class="current-conditions-container" *ngIf="forcastConditions$| async ">
+
+<!-- <div class="row">
+<div style="text-align: center;width:100%;font-size: 16px;">ForeCast</div>
+<ng-container *ngFor="let element of forecastConditions.forecast" >
+<div class="column">
+{{element.day}}
+{{element.temp}} C</div>
+</ng-container>
+</div> -->
+<div class="row">
+  <div style="text-align: center;width:100%;font-size: 16px;">ForeCast</div>
+<mat-card class="example-card " *ngFor="let element of forcastConditions.forecast" >
+  <div class="column">
+  <mat-card-subtitle>{{element.day}}</mat-card-subtitle>
+  <mat-card-title>{{element.temp}}</mat-card-title>
+  </div>
+</mat-card>
+</div>
+
+
+</ng-container>
